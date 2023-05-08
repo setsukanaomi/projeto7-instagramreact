@@ -10,12 +10,6 @@ export default function Post(props) {
   const [heartsColor, setHeartsColors] = React.useState(false);
   const actualHeartColor = heartsColor ? "redHeart" : "blackHeart";
 
-  function likeImg() {
-    if (actualHearts === "heart-outline") {
-      postLike();
-    }
-  }
-
   function postLike() {
     setHearts(!hearts);
     setHeartsColors(!heartsColor);
@@ -39,7 +33,7 @@ export default function Post(props) {
       </div>
 
       <div class="conteudo">
-        <img data-test="post-image" onclick={likeImg} src={props.media} alt={props.mediaAlt} />
+        <img data-test="post-image" src={props.media} alt={props.mediaAlt} />
       </div>
 
       <div class="fundo">

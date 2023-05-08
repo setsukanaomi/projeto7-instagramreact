@@ -4,11 +4,11 @@ export default function Sidebar() {
   return (
     <div class="sidebar">
       <div class="usuario">
-        <img src="assets/img/catanacomics.svg" alt="imagem de perfil" />
-        <div class="texto">
+        <img data-test="profile-image" src="assets/img/catanacomics.svg" alt="imagem de perfil" />
+        <div data-test="name" class="texto">
           <span>
             <strong>catanacomics</strong>
-            <ion-icon name="pencil"></ion-icon>
+            <ion-icon data-test="edit-name" name="pencil"></ion-icon>
           </span>
         </div>
       </div>

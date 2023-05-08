@@ -20,6 +20,12 @@ export default function Post(props) {
     }
   }
 
+  function likeImg() {
+    if (actualHearts === "heart-outline") {
+      postLike();
+    }
+  }
+
   return (
     <div data-test="post" class="post">
       <div class="topo">
@@ -33,7 +39,7 @@ export default function Post(props) {
       </div>
 
       <div class="conteudo">
-        <img data-test="post-image" src={props.media} alt={props.mediaAlt} />
+        <img data-test="post-image" onClick={likeImg} src={props.media} alt={props.mediaAlt} />
       </div>
 
       <div class="fundo">

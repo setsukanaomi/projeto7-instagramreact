@@ -206,6 +206,14 @@ body {
   font-weight: 300;
 }
 
+.redHeart {
+  color: red;
+}
+
+.blackHeart {
+  color: black;
+}
+
 .post .fundo .curtidas img {
   width: 20px;
   height: 20px;
